@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #bcd6ff, #a8f0d4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout {
+    width: 320px;
+    background: #f982ed;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.screen {
+    background: #e0e7ff;
+    color: #333;
+    height: 70px;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.buttons {
+    margin-top: 18px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.but {
+    height: 48px;
+    border: none;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #ffffff;
+    color: #333;
+    transition: all 0.15s ease;
+}
+
+.but:hover {
+    background: #e5e7eb;
+}
+
+.but:active {
+    transform: scale(0.95);
+}
+
+.but:nth-child(4n) {
+    background: #93c5fd;
+}
+
+.but:nth-child(4n):hover {
+    background: #60a5fa;
+}
+
+.but:nth-child(15) {
+    background: #86efac;
+    color: #065f46;
+}
+
+.but:nth-child(15):hover {
+    background: #4ade80;
+}
+
+.button2 {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.but1 {
+    flex: 1;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fca5a5;
+    color: #7f1d1d;
+    transition: all 0.15s ease;
+}
+
+.but1:last-child {
+    background: #fde68a;
+    color: #78350f;
+}
+
+.but1:hover {
+    opacity: 0.9;
+}
+
+.but1:active {
+    transform: scale(0.95);
+}
